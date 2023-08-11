@@ -46,61 +46,60 @@ export default function Home() {
         <div className={styles.content}>
           <div id='about' style={{}}>
             <h1>About</h1>
-            <p>Hi! I am Sai Teja Dasari. I love AI and ML, I want to work in different projects</p>
+            <p>Hi! I am Sai Teja Dasari. Experienced AI Engineer with hands-on machine learning skills with the ability to collaborate and build AI 
+solutions. Expert in writing codes and building complex neural networks. Strong analytical and problem solving abilities, coupled with a passion for staying up to date with the latest advancements in AI. Committed 
+to leveraging my skills to contribute and create meaningful change.
+            </p>
           </div>
           <div id='skills' style={{}}>
             <h1>Skills</h1>
-            <p>Hi! I am Sai Teja Dasari. I love AI and ML, I want to work in different projects</p>
+            <p>Languages: Python, Java, NodeJS, React, React Native, Java Script</p>
+            <p>Databases: MongoDB, Elastic Search, MySQL, Redis</p>
+            <p>Libraries: Numpy, Pandas, Tensorflow, Pytorch, Keras, OpenCV, HuggingFace</p>
+            <p>Operating Systems: Linux, Windows, Mac</p>
+            <p>Other Skills: Machine Learning, Data Structures, Data Visualization, Git, Github</p>
+            <p>Tools: Tableau, Visual Studio Code, Pycharm, Eclipse, IntelliJ</p>
           </div>
           <div id='projects' style={{}}>
             <h1>Projects</h1>
-            <p>Hi! I am Sai Teja Dasari. I love AI and ML, I want to work in different projects</p>
+            <p>Here are some of the projects I have done on my own time</p>
             <div className={styles.grid}>
-              <a href="https://nextjs.org/docs" className={styles.card}>
-                <h3>Documentation &rarr;</h3>
-                <p>Find in-depth information about Next.js features and API.</p>
+              <a className={styles.card}>
+                <h3>Translation</h3>
+                <p>Machine translation of sentences from English language to Telugu language</p>
               </a>
 
-              <a href="https://nextjs.org/learn" className={styles.card}>
-                <h3>Learn &rarr;</h3>
-                <p>Learn about Next.js in an interactive course with quizzes!</p>
+              <a className={styles.card}>
+                <h3>Document Based Question Answering</h3>
+                <p>A system that reads the documents and can answer any questions posed from the document</p>
               </a>
 
-              <a
-                href="https://github.com/vercel/next.js/tree/master/examples"
-                className={styles.card}
-              >
-                <h3>Examples &rarr;</h3>
-                <p>Discover and deploy boilerplate example Next.js projects.</p>
+              <a className={styles.card}>
+                <h3>Speech To Text</h3>
+                <p>A Machine learning model capable of converting speech/audio data to text</p>
               </a>
 
-              <a
-                href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                className={styles.card}
-              >
-                <h3>Deploy &rarr;</h3>
+              <a className={styles.card}>
+                <h3>Coupon Reminder</h3>
                 <p>
-                  Instantly deploy your Next.js site to a public URL with Vercel.
+                  A system that reads and stores coupons and notifies the users when to redeem.
                 </p>
               </a>
             </div>
           </div>
           <div id='contact' style={{}}>
             <h1>Contact</h1>
-            <p>Hi! I am Sai Teja Dasari. I love AI and ML, I want to work in different projects</p>
+            <p>LinkedIn</p>
+            <p>Github</p>
+
           </div>
         </div>
 
 
       </div>
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+        <a>
+          Copyright c Sai Teja Dasari 2023
         </a>
       </footer>
 
