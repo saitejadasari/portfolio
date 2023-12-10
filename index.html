@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Sai Teja Dasari | Engineer | Developer | Machine Learning | Artificial Intelligence
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <div class="nav__logo">
+          <a href="#" class="nav__link">Home</a>
+        </div>
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item"><a href="#work" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Sai Teja Dasari</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Engineer | Developer | Machine Learning | Artificial Intelligence</p>
+        <!-- <a href="#contact" class="btn btn--pink">Get in touch</a> -->
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Experienced Machine Learning Engineer with 4+ years in AI, software development, and collaboration. 
+              Adept at building complex neural networks, automating ETL/ML pipelines, and deploying innovative AI solutions. 
+              Proven success in optimizing project efficiency, reducing candidate evaluation time by 50%, and leading projects 
+              resulting in increased product sales and user satisfaction. Skilled in Python, Java, NodeJS, React Native, and various 
+              databases.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <!-- <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ****** Skills ****** -->
+
+    <!-- <section class="skills" id="skills">
+      <div class="row">
+        <h2>Skills</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Experienced Machine Learning Engineer with 4+ years in AI, software development, and collaboration. 
+              Adept at building complex neural networks, automating ETL/ML pipelines, and deploying innovative AI solutions. 
+              Proven success in optimizing project efficiency, reducing candidate evaluation time by 50%, and leading projects 
+              resulting in increased product sales and user satisfaction. Skilled in Python, Java, NodeJS, React Native, and various 
+              databases.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Tic-Tac-Toe game</h3>
+              <p>
+                This project is a classic implementation of the Tic-Tac-Toe game built using the Pygame library. 
+                The game provides an engaging experience with a user-friendly interface for playing against an AI opponent.
+                The AI opponent utilizes a strategic search algorithm called MinMax to make intelligent moves, providing a challenging match for players.
+                I have used Pygame and created a graphical interface to build this game and handle user input.
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Pygame</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/saitejadasari/tictactoe" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <!-- <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+            </div> -->
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Question Answering Application</h3>
+              <p>
+                I developed a question-answering system using Retrieval Augmented Generation (RAG) with BERT and Pinecone. 
+                The project involved indexing text data into Pinecone's vector database, leveraging BERT for semantic vector 
+                representations. Utilizing Hugging Face's fine-tuned BERT model on SQuAD, the system performs bi-directional 
+                understanding of natural language and extracts answers from provided text. At inference, user questions are 
+                tokenized and the retriever finds relevant passages in indexed data using Pinecone. The generator then produces 
+                answers in a user-friendly HTML and JavaScript UI, seamlessly integrated with Flask for deployment as a service.
+              </p>
+              <ul class="work__list">
+                <li>BERT</li>
+                <li>Generative AI</li>
+                <li>Flask</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/saitejadasari/QnAApp">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <img src="" class="work__image" alt="Project 1" /> -->
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>News Category Classification</h3>
+              <p>
+                This project categorizes news articles using a Kaggle dataset of 200,000+ labeled articles across 42 categories. 
+                Focused on the top 15 categories, a baseline LSTM model achieves 50% accuracy. Upgrading to a Bidirectional 
+                RNN model raises accuracy to 70%. Leveraging a pre-trained BERT model, the final approach achieves over 90% accuracy 
+                with minimal adjustments, showcasing the power of transfer learning in text classification.
+              </p>
+              <ul class="work__list">
+                <li>Pandas</li>
+                <li>Tensorflow</li>
+                <li>LSTM</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/saitejadasari/notebooks/blob/0d7f0dc33015a7a5a64d3973d305cf4f8f9f5da8/News_category_classification.ipynb">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <img src="" class="work__image" alt="Project 3" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <div class="contact__info">
+        <p>
+          Have burning questions, brilliant ideas, or just want to chat about the wonders of machine learning and 
+          the mysteries of the universe? Don't be a stranger—reach out and let's turn those 1s and 0s into a lively 
+          conversation! Whether you prefer pigeons carrying handwritten notes or the modern magic of emails, carrier ravens or 
+          telegrams might be a stretch, but my inbox is always open. Let's break the ice and explore the uncharted territories of tech, 
+          one witty exchange at a time. Looking forward to hearing from you, fellow digital explorer!
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:dsteja001@gmail.com" class="btn">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/saitejadasari/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/saiteja-dasari/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        &copy; Sai Teja Dasari 2023
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
