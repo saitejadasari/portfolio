@@ -47,7 +47,7 @@
 
     --gutter-huge: 12rem;
     --gutter-medium: 6rem;
-    --gutter-normal: 3rem;
+    --gutter-normal: 1rem;
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 
@@ -79,6 +79,14 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
+}
+
+.home__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 @media(max-width: 1340px) {
@@ -132,6 +140,8 @@ h3 {
     line-height: 1;
     font-size: var(--font-size-huge);
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
 }
 
 @media(max-width: 900px) {
@@ -376,7 +386,7 @@ body:not(.user-is-tabbing) a:focus {
 .nav__link {
     position: relative;
     display: inline-block;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     text-decoration: none;
     color: inherit;
     transition: all .2s;
@@ -409,13 +419,19 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
-    height: 100vh;
-    background-size: cover;
+    /* background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/header.jpg'); */
+    /* height: 100vh; */
+    /* background-size: cover; */
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     font-size: var(--font-size-normal);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
 }
 
 .header__text {

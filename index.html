@@ -25,7 +25,7 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <div class="nav__logo">
-          <a href="#" class="nav__link">Home</a>
+          <a href="#home" class="nav__link">Home</a>
         </div>
         <ul class="nav__items">
           <li class="nav__item">
@@ -39,22 +39,28 @@
         </ul>
       </nav>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Sai Teja Dasari</span>
-        </h1>
+  </header>
+
+  <!-- Home Page -->
+
+  <section class="about" id="home">
+    <div class="home__container">
+      <h1 class="heading-primary">
+        <text>Hi, I'm</text>
+        <text>Sai Teja Dasari</text>
+      </h1>
+      <div class="about__text">
         <!-- Put a small paragraph about yourself -->
-        <p>Engineer | Developer | Machine Learning | Artificial Intelligence</p>
+        <p>Software Engineer | Developer | Machine Learning | Artificial Intelligence</p>
         <!-- <a href="#contact" class="btn btn--pink">Get in touch</a> -->
       </div>
     </div>
-  </header>
+  </section>
+
 
   <main role="main">
 
     <!-- ***** About ***** -->
-
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
@@ -169,6 +175,32 @@
 
           <div class="work__box">
             <div class="work__text">
+              <h3>Vibe</h3>
+              <p>
+                FILL THIS UP
+              </p>
+              <ul class="work__list">
+                <li>Pandas</li>
+                <li>Tensorflow</li>
+                <li>LSTM</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/saitejadasari/notebooks/blob/0d7f0dc33015a7a5a64d3973d305cf4f8f9f5da8/News_category_classification.ipynb">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <img src="" class="work__image" alt="Project 3" /> -->
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
               <h3>News Category Classification</h3>
               <p>
                 This project categorizes news articles using a Kaggle dataset of 200,000+ labeled articles across 42 categories. 
@@ -243,7 +275,7 @@
     </div>
   </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
+  <a href="#home" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
