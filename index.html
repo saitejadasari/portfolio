@@ -19,43 +19,45 @@
 
 <body>
 
+  <nav class="nav" role="navigation">
+    <div class="nav__container">
+      <div class="nav__logo">
+        <a href="#home" class="nav__link">Home</a>
+      </div>
+      <div class="nav__opts">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- ***** Header ***** -->
 
   <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <div class="nav__logo">
-          <a href="#home" class="nav__link">Home</a>
+    <div class="header__container">
+        <div class="header__name">
+          <h1 class="heading-primary">
+            <text>Hi, I'm</text>
+            <text>Sai Teja Dasari</text>
+          </h1>
         </div>
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item"><a href="#work" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="about__text">
+          <!-- Put a small paragraph about yourself -->
+          <p>Software Engineer | Developer | Machine Learning | Artificial Intelligence</p>
+          <!-- <a href="#contact" class="btn btn--pink">Get in touch</a> -->
+        </div>
     </div>
   </header>
 
   <!-- Home Page -->
 
-  <section class="about" id="home">
-    <div class="home__container">
-      <h1 class="heading-primary">
-        <text>Hi, I'm</text>
-        <text>Sai Teja Dasari</text>
-      </h1>
-      <div class="about__text">
-        <!-- Put a small paragraph about yourself -->
-        <p>Software Engineer | Developer | Machine Learning | Artificial Intelligence</p>
-        <!-- <a href="#contact" class="btn btn--pink">Get in touch</a> -->
-      </div>
-    </div>
-  </section>
+  <!-- <section class="about" id="home">
+    
+  </section> -->
 
 
   <main role="main">
@@ -80,7 +82,7 @@
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <!-- <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" /> -->
+            <img class="about__photo" src="./images/Saiteja.jpg" alt=""/>
           </div>
         </div>
       </div>
@@ -88,146 +90,102 @@
 
     <!-- ****** Skills ****** -->
 
-    <!-- <section class="skills" id="skills">
+    <section class="skills" id="skills">
       <div class="row">
         <h2>Skills</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              Experienced Machine Learning Engineer with 4+ years in AI, software development, and collaboration. 
-              Adept at building complex neural networks, automating ETL/ML pipelines, and deploying innovative AI solutions. 
-              Proven success in optimizing project efficiency, reducing candidate evaluation time by 50%, and leading projects 
-              resulting in increased product sales and user satisfaction. Skilled in Python, Java, NodeJS, React Native, and various 
-              databases.
-            </p>
+        <p>Here are some of my skills</p>
+        <div class="skills__content">
+          <div>
+            <p>Machine Learning/Artificial Intelligence</p>
+            <p>Tensorflow, Pytorch, Keras, HuggingFace, Langchain, OpenAI, Llama Index, Numpy, Pandas</p>
           </div>
+          <div>
+            <p>Python, Java, NodeJS, React-Native</p>
+            <p>FastAPI, Flask, Springboot, Maven, Java Play, Hibernate</p>
+          </div>
+          <div>
+            <p>MongoDB, Elastic Search, Redis, MySQL, PostgreSQL</p>
+          </div>
+          <div>
+            <p>Git, Github, Bitbucket, Docker, Kubernetes</p>
+        </div>
+        <div>
+          <p>Airflow, Kafka, AWS, Azure</p>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- ***** Work ***** -->
 
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Tic-Tac-Toe game</h3>
-              <p>
-                This project is a classic implementation of the Tic-Tac-Toe game built using the Pygame library. 
-                The game provides an engaging experience with a user-friendly interface for playing against an AI opponent.
-                The AI opponent utilizes a strategic search algorithm called MinMax to make intelligent moves, providing a challenging match for players.
-                I have used Pygame and created a graphical interface to build this game and handle user input.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Pygame</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/saitejadasari/tictactoe" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+        <h2>Projects</h2>
+          <div class="projects-box">
+            <div class="project-card">
+              <a href="https://github.com/username/project1">
+                <img src="images/tic-tac-toe.jpeg" alt="Tic Tac Toe Game">
+              </a>
+              <h3>Tic Tac Toe Game</h3>
+              <div class="project-description">
+                <p>This is a description of Project 1.</p>
               </div>
             </div>
-            <!-- <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div> -->
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
+            <!-- Repeat for other projects -->
+            <div class="project-card">
+              <a href="https://github.com/username/project1">
+                <img src="images/qna.jpeg" alt="Question Answering Application">
+              </a>
               <h3>Question Answering Application</h3>
-              <p>
-                I developed a question-answering system using Retrieval Augmented Generation (RAG) with BERT and Pinecone. 
-                The project involved indexing text data into Pinecone's vector database, leveraging BERT for semantic vector 
-                representations. Utilizing Hugging Face's fine-tuned BERT model on SQuAD, the system performs bi-directional 
-                understanding of natural language and extracts answers from provided text. At inference, user questions are 
-                tokenized and the retriever finds relevant passages in indexed data using Pinecone. The generator then produces 
-                answers in a user-friendly HTML and JavaScript UI, seamlessly integrated with Flask for deployment as a service.
-              </p>
-              <ul class="work__list">
-                <li>BERT</li>
-                <li>Generative AI</li>
-                <li>Flask</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/saitejadasari/QnAApp">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+              <div class="project-description">
+                <p>This is a description of Project 1.</p>
               </div>
             </div>
-            <div class="work__image-box">
-              <!-- <img src="" class="work__image" alt="Project 1" /> -->
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Vibe</h3>
-              <p>
-                FILL THIS UP
-              </p>
-              <ul class="work__list">
-                <li>Pandas</li>
-                <li>Tensorflow</li>
-                <li>LSTM</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/saitejadasari/notebooks/blob/0d7f0dc33015a7a5a64d3973d305cf4f8f9f5da8/News_category_classification.ipynb">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+            <div class="project-card">
+              <a href="https://github.com/username/project1">
+                <img src="images/image-analysis-generation.png" alt="Image Analysis and Generation">
+              </a>
+              <h3>Image Analysis and Generation</h3>
+              <div class="project-description">
+                <p>This is a description of Project 1.</p>
               </div>
             </div>
-            <div class="work__image-box">
-              <!-- <img src="" class="work__image" alt="Project 3" /> -->
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
+            <div class="project-card">
+              <a href="https://github.com/username/project1">
+                <img src="images/news-category-classification.jpg" alt="News Category Classification">
+              </a>
               <h3>News Category Classification</h3>
-              <p>
-                This project categorizes news articles using a Kaggle dataset of 200,000+ labeled articles across 42 categories. 
-                Focused on the top 15 categories, a baseline LSTM model achieves 50% accuracy. Upgrading to a Bidirectional 
-                RNN model raises accuracy to 70%. Leveraging a pre-trained BERT model, the final approach achieves over 90% accuracy 
-                with minimal adjustments, showcasing the power of transfer learning in text classification.
-              </p>
-              <ul class="work__list">
-                <li>Pandas</li>
-                <li>Tensorflow</li>
-                <li>LSTM</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/saitejadasari/notebooks/blob/0d7f0dc33015a7a5a64d3973d305cf4f8f9f5da8/News_category_classification.ipynb">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+              <div class="project-description">
+                <p>This is a description of Project 1.</p>
               </div>
             </div>
-            <div class="work__image-box">
-              <!-- <img src="" class="work__image" alt="Project 3" /> -->
+            <div class="project-card">
+              <a href="https://github.com/username/project1">
+                <img src="images/news-category-classification.jpg" alt="RAG based QnA">
+              </a>
+              <h3>RAG based QnA</h3>
+              <div class="project-description">
+                <p>This is a description of Project 1.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <a href="https://github.com/username/project1">
+                <img src="images/news-category-classification.jpg" alt="Personalized Conversational Assistant">
+              </a>
+              <h3>Personalized Conversational Assistant</h3>
+              <div class="project-description">
+                <p>This is a description of Project 1.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <a href="https://github.com/username/project1">
+                <img src="images/news-category-classification.jpg" alt="Trend Prediction">
+              </a>
+              <h3>Trend Prediction</h3>
+              <div class="project-description">
+                <p>This is a description of Project 1.</p>
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
   </main>

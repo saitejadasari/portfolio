@@ -1,5 +1,5 @@
 /* --------------------------------------- */
-/* ----- Basic Setup ----- */
+/* ----- Setup ----- */
 /* --------------------------------------- */
 
 @font-face {
@@ -35,7 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --pink: #9d00b9;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -67,6 +67,8 @@ html {
 }
 
 body {
+    display:flex;
+    flex-direction: column;
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
@@ -79,14 +81,10 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
-}
-
-.home__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex: 1;
     flex-direction: column;
+    justify-self: center
 }
 
 @media(max-width: 1340px) {
@@ -136,14 +134,6 @@ h3 {
     color: var(--white);
 }
 
-.heading-primary {
-    line-height: 1;
-    font-size: var(--font-size-huge);
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-}
-
 @media(max-width: 900px) {
     .heading-primary {
         font-size: 6.5rem;
@@ -161,7 +151,7 @@ h2::after {
     height: 2px;
     width: 10rem;
     background: var(--pink);
-    margin: var(--gutter-small) 0;
+    margin: var(--gutter-small  ) 0;
 }
 
 h3 {
@@ -347,13 +337,30 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    width: 100%;
     padding: var(--gutter-normal) 0;
+    z-index: 20;
+    position: fixed;
+}
+
+.nav__container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
 }
 
 .nav__logo {
     display: flex;
+    flex: 0.5;
     justify-content: flex-start;
+    padding-left: 8%;
+}
+
+.nav__opts {
+    display: flex;
+    flex: 0.5;
+    justify-content: space-around;
 }
 
 .nav__items {
@@ -419,19 +426,39 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    /* background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg'); */
-    /* height: 100vh; */
-    /* background-size: cover; */
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/back_bay_small.jpg');
+    height: 100vh;
+    background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     font-size: var(--font-size-normal);
-    position: fixed;
-    z-index: 100;
-    top: 0;
+    /* position: fixed; */
+    /* z-index: 100; */
+    /* top: 0; */
     left: 0;
     width: 100%;
     background-color: black;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.header__container {
+    display: flex;
+    flex: 1;
+    top: 35%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-primary {
+    line-height: 1;
+    font-size: var(--font-size-huge);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header__text {
@@ -526,31 +553,62 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
+.projects-box {
     display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px;
 }
 
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 380px; 
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .project-card img {
+    width: 100%; 
+    height: 90%;
+    object-fit: cover;
+  }
+  
+  .project-card h3 {
+    margin: 0 0;
+    text-decoration: none;
+  }
+  
+  .project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card:hover .project-description {
+    opacity: 1;
+  }
 
 /* --------------------------------------- */
 /* ----- About ----- */
