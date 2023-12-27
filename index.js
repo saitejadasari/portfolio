@@ -32,20 +32,36 @@ let alterStyles = (isBackToTopRendered) => {
     : "scale(0)";
 };
 
+let alterHeaderStyles = (scrollPosition) => {
+  var header = document.getElementsByClassName('header');
+  // console.log("scrollPosition: ", scrollPosition);
+  // console.log("header", header);
+  // console.log("header.top size", header.top.style.backgroundSize, header.top.style.opacity);
+  var newVal = Math.max(100 - scrollPosition/10, 0);
+  header.top.style.opacity = newVal/100;
+  // console.log("header.top size after", header.top.style.backgroundSize, header.top.style.opacity, "new size", newVal);
+};
+
 window.addEventListener("scroll", () => {
-  // if (window.scrollY > 700) {
-  //   isBackToTopRendered = true;
-  //   alterStyles(isBackToTopRendered);
-  // } else {
-  //   isBackToTopRendered = false;
-  //   alterStyles(isBackToTopRendered);
-  // }
-    var scrollPosition = window.scrollY;
-    var header = document.getElementsByClassName('header');
-    console.log("scrollPosition: ", scrollPosition);
-    console.log("header", header);
-    console.log("header.top size", header.top.style.backgroundSize, header.top.style.opacity);
-    var newVal = Math.max(100 - scrollPosition/10, 0);
-    header.top.style.opacity = newVal/100;
-    console.log("header.top size after", header.top.style.backgroundSize, header.top.style.opacity, "new size", newVal);
+  if (window.scrollY > 700) {
+    isBackToTopRendered = true;
+    alterStyles(isBackToTopRendered);
+  } else {
+    isBackToTopRendered = false;
+    alterStyles(isBackToTopRendered);
+  }
+  var scrollPosition = window.scrollY;
+  alterHeaderStyles(scrollPosition);
+});
+
+
+document.querySelectorAll('.skills-title').forEach((item) => {
+  item.addEventListener('click', (event) => {
+      let subSkills = event.target.nextElementSibling;
+      if (subSkills.style.display === "none") {
+          subSkills.style.display = "block";
+      } else {
+          subSkills.style.display = "none";
+      }
+  });
 });
