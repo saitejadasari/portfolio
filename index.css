@@ -508,12 +508,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .skill-card h3 {
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 2.5rem;
 }
 
 .sub-skills {
-    display: none;
+    display: block;
     transition: max-height 0.2s ease-out;
     overflow: hidden;
 }

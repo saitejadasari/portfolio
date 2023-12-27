@@ -55,13 +55,13 @@ window.addEventListener("scroll", () => {
 });
 
 
-document.querySelectorAll('.skills-title').forEach((item) => {
-  item.addEventListener('click', (event) => {
-      let subSkills = event.target.nextElementSibling;
-      if (subSkills.style.display === "none") {
-          subSkills.style.display = "block";
-      } else {
-          subSkills.style.display = "none";
-      }
-  });
-});
+// document.querySelectorAll('.skills-title').forEach((item) => {
+//   item.addEventListener('click', (event) => {
+//       let subSkills = event.target.nextElementSibling;
+//       if (subSkills.style.display === "none") {
+//           subSkills.style.display = "block";
+//       } else {
+//           subSkills.style.display = "none";
+//       }
+//   });
+// });
